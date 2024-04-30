@@ -1,4 +1,5 @@
 <!DOCTYPE html><html><head>
+  <meta charset="UTF-8">
   <!--<script esub_for_shop="-7EBNQCgQAAAc6bwEDeIUABQ5XhvQREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE" user_safe_id="4c5214b4b1b265142f56da147cf8429c" cat="Diet" src="https://cf.just-news.pro/js/fcmjsgo/bckfix4shp.js"></script>-->
   <!--<script esub_for_shop="-7EBNQCgQAAAc6bwEDeIUABQ5XhvQREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE" user_safe_id="4c5214b4b1b265142f56da147cf8429c" cat="Diet" src="https://cf.just-news.pro/js/fcmjsgo/subscribe4shp.js"></script>-->
     
@@ -129,67 +130,88 @@
 			             <input type="hidden" name="sub4" value="{adset}">
 			             <input type="hidden" name="sub5" value="{ad}">
 			             <input type="hidden" name="pixel" value="{pixel}">
-
+  
+                                  <style>
+                                    .descount {
+                                      color: #3578e5;
+                                      font-size: 27px !important;
+                                      font-weight: bold;
+                                      display: block;
+                                      margin: 16px auto;
+                                    }
+                                    #price {
+                                      display: flex;
+                                      justify-content: center;
+                                      flex-wrap: wrap;
+                                      margin: 10px auto;
+                                      font-size: 24px;
+                                    }
+                                    #price .price_new {
+                                      margin: 0px 5px;
+                                      color: #3578e5;
+                                      text-shadow: 4px 4px 3px #00000033;
+                                    }
+                                    #price .price_old {
+                                      margin: 0px 5px;
+                                      color: #80808069;
+                                      text-decoration: line-through;
+                                    }
+                                    .order_form_pole input {
+                                      border: 1px solid #3578e563;
+                                      height: 31px;
+                                      padding-left: 10px;
+                                    }
+                                    #order_form_place label {
+                                      display: block;
+                                      margin-top: 13px;
+                                      margin-bottom: 6px;
+                                      font-size: 16px;
+                                    }
+                                    #validation-message {
+                                      margin-top: 6px;
+                                    }
+                                  </style>
 
                                   <span id="order"></span>
                                     <div id="order_form_place" style="display:block;">
                                         <center>
-                                            <img src="images/med.png" style="max-width:100px;">
-                                            <h2> Formulario de pedido oficial </h2>
-                                            <span style="color:blue;font-size:14px; display: block; margin: 10px 0;"> № 29,982 de 30,000
-                                                                <span class="js-current-date"></span>
-                                                            </span>
+                                          
+                                          <label class="descount">Descuento -50%</label>
+                                          <div id="price">
+                                            <div class="price_new">
+                                              29&nbsp;€
+                                            </div>
+                                            <div class="price_old">
+                                              58&nbsp;€
+                                            </div>
+                                          </div>
                                         </center>
-                                        <div style="text-align: center;">
-                                            <span style="font-size:16px; display: block; margin: 10px 0;" class="text1">
-										para la obtención de Fortunella a precio preferencial de (<b style="text-decoration:line-through;color: red">$ 278.000</b>) <b style="color:green;font-size:larger; font-weight: 700;">$ 139.000
-</b>
-									</span>
-                                        </div>
-                                        <div class="toscroll" style="margin:15px 10px 10px 10px;border:2px solid #0299ff;padding:10px;     text-align: center;">
-                                                            <span><b style="font-weight: bolder;"> Para recibir "Fortunella", ingrese su nombre y
-                                                                    número de teléfono en los campos a continuación y
-                                                                    haga clic en "DEJAR UNA SOLICITUD".
-                                                                </b></span>
-                                        </div>
+                                        
+                                      
                                         <div class="order_form_pole">
-                                            <input name="name" placeholder="Nombre" required="" type="text">
+                                          <label class="inp_name">Nombre</label>
+                                            <input name="name" placeholder="" required="" type="text">
                                         </div>
                                         <div class="order_form_pole">
 
                                             <div class="form_phone">
-                                                <input class="only_number" name="phone" placeholder="Número de teléfono" required="" type="tel">
+                                              <label class="inp_phone">Teléfono (móvil activo)
+                                              </label>
+                                              <input name="phone" placeholder="" required="required" type="tel" id="phone" autocomplete="tel">
+                                              <div id="validation-message"></div>
                                             </div>
                                         </div>
                                         <div style="margin-bottom:20px;">
-                                            <button class="js_submit button__text" type="submit"> DEJAR
-                                                UNA SOLICITUD
-
-                                            </button>
+                                            <button class="js_submit button__text" type="submit">ORDENAR</button>
                                             <div style="margin-bottom:20px;"></div>
-                                            <div class="timelimit" style="text-align:center;"><span> La recepción de solicitudes está a punto de terminar
-									</span>
-                                                <span class="timer" style="font-size: 18px; color: red; font-weight: 700;">
-										<span id="min">10</span>
-										:
-										<span id="sec">00</span>
-									</span>
-                                            </div>
-                                            <p style="text-align: center;">* Sus datos se envían
-                                                directamente al fabricante. Ya nadie tendrá acceso a
-                                                ellos</p>
+                                            <p style="text-align: center;">* Sus datos están confidenciales</p>
                                         </div>
 
                                     </div>
                                 </form>
                             </center>
 
-
-                            <footer>
-                                <a href="#roulette">Terms &amp; Conditions </a> |
-                                <a href="#roulette">Privacy Policy</a> |
-                                <a href="#roulette">Returns, Refunds and Exchanges Policy</a>
-                            </footer>
+                          
 
                             <style>
                                 .order_block h3 {
@@ -197,7 +219,7 @@
                                 }
 
                                 #order_form {
-                                    margin-top: 20px !important;
+                                    margin-top: -80px !important;
                                 }
                                 .order_block img {
                                     width: 100% !important;
@@ -347,6 +369,51 @@ if(event){
 }
   
 </script>
+
+    <!-- PHONE INPUT -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@20.0.5/build/css/intlTelInput.css">
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@20.0.5/build/js/intlTelInput.min.js"></script>
+    <script>
+      const input = document.querySelector("#phone");
+      const submitButton = document.querySelector("button[type='submit']");
+      const iti = window.intlTelInput(input, {
+        allowDropdown: false,
+        countrySearch: false,
+        geoIpLookup: function(callback) {
+          fetch("https://ipapi.co/json")
+            .then(function(res) { return res.json(); })
+            .then(function(data) { callback(data.country_code); })
+            .catch(function() { callback(); });
+        },
+
+
+        initialCountry: "es",
+        placeholderNumberType: "MOBILE",
+        showFlags: true,
+        showSelectedDialCode: true,
+        utilsScript: "./js/utils.js",
+      });
+
+      input.addEventListener('input', function() {
+        const validationMessage = document.querySelector("#validation-message");
+
+        if (iti.isValidNumber()) {
+          if (validationMessage) {
+            validationMessage.textContent = "Numero de teléfono valido";
+          } else {
+            validationMessage.textContent = "Numero de teléfono valido";
+          }
+          submitButton.removeAttribute('disabled');
+        } else {
+          if (validationMessage) {
+            validationMessage.textContent = "Numero de teléfono invalido";
+          } else {
+            validationMessage.textContent = "Numero de teléfono invalido";
+          }
+          submitButton.setAttribute('disabled', 'disabled');
+        }
+      })
+    </script>
 
 
 
